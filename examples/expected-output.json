@@ -1,0 +1,47 @@
+{
+  "device_id": "864636051234501",
+  "trips": [
+    {
+      "device_id": "864636051234501",
+      "start_time": "2026-08-03T01:03:00Z",
+      "end_time": "2026-08-03T01:07:30Z",
+      "duration_seconds": 270,
+      "distance_km": 1.741,
+      "max_speed_kph": 42.0,
+      "avg_speed_kph": 23.21,
+      "start_latitude": -6.1751,
+      "start_longitude": 106.865,
+      "end_latitude": -6.1751,
+      "end_longitude": 106.88075,
+      "point_count": 9
+    },
+    {
+      "device_id": "864636051234501",
+      "start_time": "2026-08-03T01:20:00Z",
+      "end_time": "2026-08-03T01:22:00Z",
+      "duration_seconds": 120,
+      "distance_km": 0.995,
+      "max_speed_kph": 51.5,
+      "avg_speed_kph": 29.85,
+      "start_latitude": -6.1751,
+      "start_longitude": 106.88075,
+      "end_latitude": -6.1751,
+      "end_longitude": 106.88975,
+      "point_count": 5
+    },
+    {
+      "device_id": "864636051234501",
+      "start_time": "2026-08-03T02:40:00Z",
+      "end_time": "2026-08-03T02:42:00Z",
+      "duration_seconds": 120,
+      "distance_km": 0.995,
+      "max_speed_kph": 55.0,
+      "avg_speed_kph": 29.85,
+      "start_latitude": -6.1751,
+      "start_longitude": 106.8902,
+      "end_latitude": -6.1751,
+      "end_longitude": 106.8992,
+      "point_count": 5
+    }
+  ]
+}

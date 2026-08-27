@@ -1,0 +1,33 @@
+name: Pertanyaan tentang take-home
+description: Ada yang tidak jelas di SPEC.md? Tanyakan di sini.
+title: "[Pertanyaan] "
+labels: ["pertanyaan"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Kami menjawab pertanyaan secara publik supaya semua kandidat mendapat
+        informasi yang sama. Bertanya **tidak** mengurangi nilai Anda.
+
+        Sebelum bertanya, coba cek dulu `examples/expected-output.json` —
+        contoh itu menjawab sebagian besar pertanyaan tentang perilaku deteksi trip.
+  - type: textarea
+    id: pertanyaan
+    attributes:
+      label: Pertanyaan Anda
+      placeholder: Bagian mana dari spesifikasi yang tidak jelas?
+    validations:
+      required: true
+  - type: input
+    id: bagian
+    attributes:
+      label: Bagian SPEC.md yang relevan
+      placeholder: "misalnya: Bagian 3.2, langkah 2"
+  - type: textarea
+    id: tafsiran
+    attributes:
+      label: Bagaimana tafsiran Anda saat ini?
+      description: >
+        Kalau Anda sudah punya dugaan, tulis di sini. Kami lebih suka melihat
+        kandidat yang sudah berpikir sebelum bertanya — dan seringkali dugaan
+        Anda sudah benar.
