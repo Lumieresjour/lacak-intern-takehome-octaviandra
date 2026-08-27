@@ -11,8 +11,23 @@ services:
   server:
     build:
       context: .
+    command: ["python", "run.py", "--input", "${INPUT_FILE:-}"]
+    volumes:
+      - ./database_sqlite.db:/app/database_sqlite.db
     ports:
       - 8080:8080
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - c
+        - |
+          import urllib.request
+          urllib.request.urlopen("http://localhost:8080/health", timeout=5)
+      interval: 2s
+      timeout: 5s
+      retries: 5
+      start_period: 2s
 
 # The commented out section below is an example of how to define a PostgreSQL
 # database that your application can use. `depends_on` tells Docker Compose to
