@@ -11,7 +11,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 DATA_DIR = os.path.join(BASE_DIR, 'data')
 VEHICLES_CSV = os.path.join(DATA_DIR, 'vehicles.csv')
 POSITIONS_NDJSON = os.path.join(DATA_DIR, 'positions.ndjson')
-DATABASE_PATH = os.path.join(BASE_DIR, 'database_sqlite.db')
+DATABASE_PATH = os.path.join(BASE_DIR, 'hasil_bonus.db')
 
 TRIP_COLUMNS = (
     'device_id', 'start_time', 'end_time', 'duration_seconds',
