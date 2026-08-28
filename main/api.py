@@ -66,7 +66,8 @@ def make_handler(vehicles, get_summary, data_lock):
                     return
                 self._send_json(404, {'error': 'not found'})
             except Exception as error:
-                self._send_json(500, {'error': 'server error', 'detail': str(error)})
+                self.log_message('Error handling request: %s', repr(error))
+                self._send_json(500, {'error': 'server error'})
         def _parse_query_time(self, query, name):
             value = query.get(name, [None])[0]
             if value is None:

@@ -26,7 +26,7 @@ Nantinya API tersedia di `http://localhost:8080`. Saat startup, aplikasi mempros
 
 jika ingin test dataset sample-input.njson(default ke positions.ndjson)
 
-```powershell
+```terminal
 $env:INPUT_FILE = 'examples/sample-input.ndjson'
 docker compose up --build
 ```
